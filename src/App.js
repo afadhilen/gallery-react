@@ -1,21 +1,22 @@
 // import {Container, Row, Col} from "react-bootstrap"
-import "./App.css"
-import NavigationBar from "./components/NavigationBar"
-import Intro from "./components/Intro"
-import Trending from "./components/Trending"
-import Potrait from "./components/Potrait"
-import "./style/style.css"
-import {ThemeProvider, createTheme} from "@mui/material/styles"
-import {CssBaseline} from "@mui/material"
-import TrendingB from "./components/TrendingB"
-import PotraitB from "./components/PotraitB"
-import {BottomNavigation} from "@mui/material"
-import Alert from "@mui/material/Alert"
+import './App.css'
+import NavigationBar from './components/NavigationBar'
+import Intro from './components/Intro'
+import Trending from './components/Trending'
+import Potrait from './components/Potrait'
+import Memoaraku from './components/Memoaraku'
+import './style/style.css'
+import { ThemeProvider, createTheme } from '@mui/material/styles'
+import { CssBaseline } from '@mui/material'
+import TrendingB from './components/TrendingB'
+import PotraitB from './components/PotraitB'
+import { BottomNavigation } from '@mui/material'
+import Alert from '@mui/material/Alert'
 
 const darkTheme = createTheme({
   palette: {
-    mode: "dark"
-  }
+    mode: 'dark',
+  },
 })
 
 function App() {
@@ -27,18 +28,15 @@ function App() {
             <NavigationBar />
             <Intro />
           </div>
+          <div className="memoaraku">
+            <Memoaraku />
+          </div>
           <div className="trending">
             <Trending />
           </div>
           <div className="potrait">
             <Potrait />
           </div>
-          {/* <div className="trending">
-            <TrendingB />
-          </div>
-          <div className="potrait">
-            <PotraitB />
-          </div> */}
           <div>
             <BottomNavigation className="p-4 m-2">
               <p>Copyright © Dhilen 2023 - All right reserved</p>
